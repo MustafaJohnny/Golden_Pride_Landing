@@ -1,19 +1,6 @@
 // Main function that is responsible for scroling the whole page
 const scroll = new SmoothScroll('a[href*="#"]');
 
-// Selecting the elements for the tarrifes product (phone version)
-const itemAll = document.querySelectorAll(".item");
-const parentElement = document.querySelector(".accordion");
-
-// Main function that is responsible for toggling the tarrife accordion.
-parentElement.addEventListener("click", (e) => {
-  const clicked = e.target.closest(".item");
-  clicked.classList.toggle("open");
-
-  //   itemAll.forEach((ele) => ele.classList.remove("open"));
-  //   e.preventDefault();
-});
-
 // Mobile navigation work and logic
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
