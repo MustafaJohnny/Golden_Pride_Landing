@@ -230,6 +230,7 @@ img {
 
 .secondSection {
   min-height: 50vw;
+  padding-top: 2rem;
   margin-bottom: 7.5rem;
   background-color: #f8f8f7;
   overflow: hidden;
@@ -268,14 +269,18 @@ img {
 }
 
 .imgframe {
-  position: absolute;
-  width: 47rem;
-  height: 30rem;
-  border: 10px solid #fced65;
-  transform: translate(-2.6rem, -2rem);
   z-index: 7;
+  width: 30.5vw;
+  height: 20vw;
+  position: absolute;
+  border: 10px solid #fced65;
+  transform: translate(-1.6vw, -1.5vw);
 }
 /***/
+
+.thirdSection {
+  padding-top: 5rem;
+}
 
 .thirdSectionContainer {
   display: flex;
@@ -293,11 +298,18 @@ img {
   margin-bottom: 3rem;
 }
 
-.imgCartBox {
-  display: flex;
+.imgCartBox1 {
+  display: grid;
+  column-gap: 4rem;
   align-items: center;
-  justify-content: center;
-  gap: 4rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.imgCartBox2 {
+  display: grid;
+  column-gap: 4rem;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .wholeImgCart {
@@ -346,8 +358,7 @@ img {
 .cart2 {
   background-image: url("./Images/cart2.png");
   background-size: cover;
-  background-position: center;
-  background-position: 0vw -6vw;
+  background-position: 0rem -8rem;
 }
 
 .cart3 {
@@ -378,7 +389,7 @@ img {
 .cart7 {
   background-image: url("./Images/cart7.JPG");
   background-size: cover;
-  background-position: 0vw -8vw;
+  background-position: 0rem -12rem;
 }
 
 .cart8 {
@@ -402,8 +413,9 @@ img {
 /***/
 
 .sectionService {
-  min-height: 50vw;
+  min-height: 45vw;
   margin-top: 10rem;
+  padding-top: 5rem;
   background-color: #160f03;
 }
 
@@ -413,14 +425,14 @@ img {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 12rem 26rem;
+  padding: 8rem 26rem 10rem 26rem;
 }
 
 .serviceHeadingArea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.6rem;
+  gap: 5rem;
 }
 
 .serviceHeading {
@@ -463,7 +475,7 @@ img {
 /***/
 
 .sectionProduct {
-  padding: 10rem;
+  padding: 12rem 10rem 10rem 10rem;
 }
 
 .sectionProductHeading {
@@ -598,7 +610,7 @@ img {
 .footerBtn:link,
 .footerBtn:visited {
   color: #18181b;
-  background-color: #ffe800;
+  background-color: #ffe800 !important;
   box-shadow: 0px 8px 18px rgba(45, 38, 25, 0.199);
 }
 
@@ -679,15 +691,33 @@ img {
   font-size: 1.6rem;
 }
 
-/* .footerSocialIcon {
-  width: 2vw;
-} */
-
 /*** Quires **/
 
 @media (max-width: 238em) {
   html {
     font-size: 130%;
+  }
+
+  .logoSVG {
+    width: 3vw;
+  }
+
+  .imgframe {
+    width: 31.6vw;
+  }
+
+  .footerSocialIcon {
+    width: 1vw;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.9rem;
+  }
+
+  .navLinkDeskT:link,
+  .navLinkDeskT:visited {
+    font-size: 1.9rem;
   }
 }
 
@@ -722,50 +752,40 @@ img {
 }
 
 @media (min-width: 140em) {
-  .svgg {
-    width: 2vw !important;
-  }
-
-  .listIcon2 {
-    width: 3vw;
-  }
-
   .heroText {
     font-size: 1.8rem;
   }
 
-  .section4Heading {
-    line-height: 5.5rem;
-  }
-
-  .fifthSection {
-    min-height: 42vw;
-  }
-
   .navLink {
     font-size: 1.8rem;
-  }
-
-  .secondSection {
-    min-height: 40vw;
-  }
-
-  .footerIcons {
-    width: 1.5vw !important;
-  }
-
-  .socialIcon {
-    width: 1.5vw !important;
-  }
-
-  .hotelCard {
-    bottom: 68%;
   }
 }
 
 @media (max-width: 120em) {
   html {
     font-size: 62.5%;
+  }
+
+  .logoSVG {
+    width: unset !important;
+  }
+
+  .imgframe {
+    width: 30.5vw !important;
+  }
+
+  .footerSocialIcon {
+    width: unset !important;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.6rem;
+  }
+
+  .navLinkDeskT:link,
+  .navLinkDeskT:visited {
+    font-size: 1.6rem;
   }
 }
 
@@ -774,10 +794,16 @@ img {
     font-size: 55%;
   }
 
-  .dotsSVG {
-    left: 16%;
-    bottom: 25%;
-    transform: translate(-50%, -50%);
+  .imgframe {
+    width: 31vw !important;
+  }
+
+  .logoSVG {
+    width: 3.6vw !important;
+  }
+
+  .footerSocialIcon {
+    width: 1.2vw !important;
   }
 }
 
@@ -786,39 +812,7 @@ img {
     font-size: 50%;
   }
 
-  .dotsSVG {
-    bottom: 24%;
-  }
-
-  .productAboutHeading {
-    font-size: 1vw;
-  }
-
-  .forthWholeList {
-    font-size: 1.3vw;
-    line-height: 3rem;
-  }
-
-  .svgg {
-    width: 2vw !important;
-  }
-
-  .optionIcon {
-    width: 1vw !important;
-  }
-
-  .arrowSVG {
-    width: 1.6vw !important;
-  }
-
   .heroText {
-    font-size: 1.1vw;
-  }
-
-  .section2Text {
-    font-size: 1.1vw;
-  }
-  .secListText {
     font-size: 1.1vw;
   }
 }
@@ -827,38 +821,11 @@ img {
   html {
     font-size: 45%;
   }
-
-  .dotsSVG {
-    bottom: 24%;
-  }
-
-  .hotelCard {
-    bottom: 73%;
-  }
-
-  .footerIcons {
-    width: 2vw !important;
-  }
-  .socialIcon {
-    width: 2vw !important;
-  }
 }
 
 @media (max-width: 67em) {
   html {
     font-size: 40%;
-  }
-
-  .dotsSVG {
-    bottom: 24%;
-  }
-
-  .hotelCard {
-    bottom: 73%;
-  }
-
-  .productAboutHeading {
-    font-size: 1vw;
   }
 }
 
@@ -866,19 +833,11 @@ img {
   html {
     font-size: 35%;
   }
-
-  .dotsSVG {
-    bottom: 27%;
-  }
 }
 
 @media (max-width: 54em) {
   html {
     font-size: 33%;
-  }
-
-  .dotsSVG {
-    bottom: 29%;
   }
 }
 
@@ -886,27 +845,11 @@ img {
   html {
     font-size: 30%;
   }
-
-  .dotsSVG {
-    bottom: 31%;
-  }
-
-  .hotelCard {
-    bottom: 75%;
-  }
 }
 
 @media (max-width: 45em) {
   html {
     font-size: 26%;
-  }
-
-  .dotsSVG {
-    bottom: 31%;
-  }
-  .sectionProduct {
-    margin-bottom: 7.5rem;
-    padding: 0 4rem;
   }
 }
 
@@ -914,39 +857,15 @@ img {
   html {
     font-size: 23%;
   }
-
-  .dotsSVG {
-    bottom: 31%;
-  }
-  .sectionProduct {
-    margin-bottom: 7.5rem;
-    padding: 0 0rem;
-  }
-
-  .productHeadingArea {
-    padding-left: 4rem;
-  }
-  .productChoicesArea {
-    padding: 4rem 4rem;
-  }
 }
 
 @media (max-width: 35em) {
   html {
     font-size: 20%;
   }
-
-  .dotsSVG {
-    bottom: 31%;
-  }
-  .sectionProduct {
-    margin-bottom: 7.5rem;
-    padding: 0 0rem;
-  }
 }
 
 /*** Quires Phones start with 512px **/
-
 @media (max-width: 32em) {
   html {
     font-size: 20%;
