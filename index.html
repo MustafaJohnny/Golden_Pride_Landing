@@ -38,7 +38,9 @@
           <li>
             <a class="main-nav-link" href="#product">Продукты</a>
           </li>
-          <li><a href="" class="main-nav-link">Связаться</a></li>
+          <li>
+            <a href="" class="main-nav-link btn--show-modal">Связаться</a>
+          </li>
         </ul>
       </nav>
 
@@ -61,7 +63,7 @@
             </p>
 
             <div class="heroBtnArea">
-              <a href="" class="btn heroBtnOne">Связаться</a>
+              <a href="" class="btn heroBtnOne btn--show-modal">Связаться</a>
 
               <a href="#product" class="btn heroBtnTwo"
                 >О продуктах <span class="arrowBtn">&darr;</span></a
@@ -370,7 +372,7 @@
               Хотите обсудить Ваш проект? Свяжитесь с нами
             </h2>
             <img src="./Icons/LineFade.svg" alt="icon" class="servieLine" />
-            <a href="" class="btn footerBtn">Связаться</a>
+            <a href="" class="btn footerBtn btn--show-modal">Связаться</a>
           </div>
 
           <div class="secondBoxFooter">
@@ -385,7 +387,9 @@
                 <a class="wholeFooterLink" href="#offers">Сервисы</a>
               </li>
               <li><a class="wholeFooterLink" href="#product">Продукты</a></li>
-              <li><a href="" class="wholeFooterLink">Связаться</a></li>
+              <li>
+                <a href="" class="wholeFooterLink btn--show-modal">Связаться</a>
+              </li>
             </ul>
 
             <div class="thefooterSocialBox">
@@ -420,5 +424,22 @@
         </div>
       </footer>
     </main>
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Get your free subscription <br />
+        in just <span class="highlight"> 2 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
   </body>
 </html>
