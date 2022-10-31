@@ -1426,5 +1426,59 @@ img {
     font-size: 3.4vw;
   }
 
-  /***/
+  /* MODAL WINDOW */
+
+  .modal {
+    width: 90vw;
+    height: 134vw;
+    padding: unset !important;
+    max-width: unset !important;
+  }
+
+  .modal__header {
+    font-size: 6.6vw;
+    margin-bottom: 6vw;
+    text-align: center;
+    transform: translateX(-1vw);
+  }
+
+  .modal__form {
+    margin: 0 3vw;
+    gap: 6vw;
+  }
+
+  .wholeContactInput {
+    gap: 3vw;
+  }
+
+  .modal__form label {
+    font-size: 3.6vw;
+    margin-left: 0.5vw;
+  }
+
+  .modal__form input {
+    width: 80vw;
+    height: 10.5vw;
+    font-size: 3.4vw;
+    padding-left: 2vw;
+  }
+
+  .contactMessageInput {
+    height: 25vw !important;
+    padding-bottom: 14vw;
+  }
+
+  .modal__form button {
+    margin-top: 2vw;
+    width: 100%;
+    font-weight: 700;
+    font-size: 3.4vw;
+    padding: 3.2vw 0vw;
+  }
+
+  .btn--close-modal {
+    top: 0.5vw;
+    right: 2vw;
+    font-size: 6.4vw;
+  }
 }
