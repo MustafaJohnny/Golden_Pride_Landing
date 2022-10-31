@@ -981,11 +981,12 @@ img {
 
   .secondSection {
     min-height: 50vw;
-    padding: 8vw 0vw;
+    padding: 6vw 0vw;
+    padding-top: 20vw !important;
   }
 
   .secondSectionContainer {
-    padding: 5.8vw;
+    padding: 2vw 5.8vw;
     row-gap: 4.6vw;
     align-items: center;
     justify-content: center;
@@ -1084,7 +1085,7 @@ img {
 
   .cart9 {
     background-position: -1vw -6vw;
-    transform: translateX(23.8vw);
+    transform: translateX(24.5vw);
   }
 
   .innoLine {
@@ -1095,63 +1096,187 @@ img {
   /***/
 
   .sectionService {
-    min-height: 45vw;
-    margin-top: 10rem;
-    padding-top: 5rem;
-    background-color: #160f03;
+    padding: 20vw 0vw 14vw 0vw;
+    min-height: 50vw !important;
   }
 
   .serviceContentBox {
-    gap: 10rem;
+    gap: 10vw;
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
-    padding: 8rem 26rem 10rem 26rem;
+    padding: unset !important;
   }
 
   .serviceHeadingArea {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5rem;
+    gap: 5vw;
   }
 
   .serviceHeading {
     font-weight: 700;
-    font-size: 4rem;
-    color: #fafafa;
+    font-size: 6.5vw;
   }
 
   .servieLine {
-    width: 12vw;
+    width: 32vw;
+    z-index: 10;
   }
 
   .servicesBox {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 15rem;
-    row-gap: 14rem;
+    row-gap: 6.4vw;
+    align-items: flex-start;
+    grid-template-rows: unset;
+    justify-content: flex-start;
+    grid-template-columns: 1fr;
   }
 
   .wholeService {
-    display: flex;
-    flex-direction: column;
+    gap: 4.2vw;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 2.6rem;
+    justify-content: flex-start;
   }
+
   .serviceBigIcon {
-    width: 5vw;
+    width: 16.5vw;
   }
 
   .serviceText {
-    color: #fafafa;
-    font-weight: 400;
-    font-size: 2.2rem;
+    font-weight: 300;
+    font-size: 4.6vw;
+    text-align: unset !important;
+  }
+
+  /***/
+
+  .sectionProduct {
+    padding: 18vw 5vw 5vw 5vw;
+  }
+
+  .sectionProductHeading {
+    font-size: 5vw;
+    margin-bottom: 8vw;
     text-align: center;
-    line-height: 3rem;
+  }
+
+  .TextBox1 {
+    order: 1;
+  }
+
+  .productsContainer {
+    gap: 10vw;
+  }
+
+  .wholeProductBox {
+    row-gap: 5vw;
+    grid-template-columns: 1fr;
+  }
+
+  .productTextBox {
+    gap: 3.2vw;
+    padding-right: 1vw;
+  }
+
+  .theProductHeading {
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+
+  .theProudctText {
+    font-size: 3.6vw;
+    line-height: 5.6vw;
+  }
+
+  .theProductList {
+    gap: 3vw;
+    margin-top: 3vw;
+    margin-left: 4vw;
+  }
+
+  .productList {
+    font-size: 3.4vw;
+    line-height: 5vw;
+  }
+
+  .wholePrudctList {
+    gap: 3.8vw;
+  }
+
+  .productMark {
+    width: 3vw;
+  }
+
+  /***/
+
+  .siteFooter {
+    margin-top: 5vw;
+    min-height: 42vw;
+    padding: 10vw 7.4rem 0rem 7.4rem;
+  }
+
+  .footerContentBox {
+    gap: 10vw;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .firstBoxFooter {
+    gap: 4vw;
+  }
+
+  .footerHeading {
+    width: 90%;
+    font-size: 5vw;
+    line-height: 8vw;
+  }
+
+  .footerBtn:link,
+  .footerBtn:visited {
+    margin-top: 2vw;
+  }
+
+  .footerSocialIcon {
+    width: 4vw !important;
+  }
+
+  .secondBoxFooter {
+    gap: 6.4vw;
+    margin-bottom: 6vw;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footerLinksList {
+    gap: 5vw;
+  }
+
+  .thefooterSocialBox {
+    gap: 5vw;
+  }
+
+  .wholeFooterLink {
+    font-size: 3.2vw;
+  }
+
+  .copyrightFotter {
+    gap: 3.4vw;
+    flex-direction: column;
+    padding: 4vw 0vw;
+    border-top: 2px solid #ffffff32;
+  }
+
+  .copyrightText {
+    font-size: 3.4vw;
+  }
+
+  .termsBox {
+    flex-direction: column;
+    gap: 2.6vw;
+  }
+
+  .termsText {
+    font-size: 3.4vw;
   }
 
   /***/
