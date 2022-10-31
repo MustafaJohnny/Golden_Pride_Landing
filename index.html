@@ -427,17 +427,27 @@
     <div class="modal hidden">
       <button class="btn--close-modal">&times;</button>
       <h2 class="modal__header">
-        Get your free subscription <br />
-        in just <span class="highlight"> 2 minutes</span>
+        Свяжитесь с <span class="highlight"> нами</span>
       </h2>
       <form class="modal__form">
-        <label>First Name</label>
-        <input type="text" />
-        <label>Last Name</label>
-        <input type="text" />
-        <label>Email Address</label>
-        <input type="email" />
-        <button class="btn">Next step &rarr;</button>
+        <div class="wholeContactInput">
+          <label>Имя</label>
+          <input type="text" required placeholder="Введите имя" />
+        </div>
+        <div class="wholeContactInput">
+          <label>Ваш email</label>
+          <input required placeholder="Введите Ваш email" type="email" />
+        </div>
+        <div class="wholeContactInput">
+          <label>Сообщение</label>
+          <input
+            class="contactMessageInput"
+            required
+            placeholder="Ваше сообщение"
+            type="text"
+          />
+        </div>
+        <button type="button" class="btn">Отправить</button>
       </form>
     </div>
     <div class="overlay hidden"></div>
