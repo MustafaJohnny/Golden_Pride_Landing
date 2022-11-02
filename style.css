@@ -607,8 +607,8 @@ img {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 4rem;
-  transform: translateX(-3.4rem);
+  gap: 3rem;
+  transform: translateX(10.5rem);
 }
 
 .thefooterSocialBox {
@@ -645,7 +645,7 @@ img {
 
 .copyrightText {
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #fafafa;
 }
 
@@ -658,7 +658,8 @@ img {
 .termsText {
   color: #fafafa;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  text-decoration: none;
 }
 
 /* MODAL WINDOW */
@@ -1385,6 +1386,7 @@ img {
 
   .footerSocialIcon {
     width: 4vw !important;
+    order: -1;
   }
 
   .secondBoxFooter {
@@ -1395,11 +1397,15 @@ img {
   }
 
   .footerLinksList {
+    transform: unset !important;
     gap: 5vw;
   }
 
   .thefooterSocialBox {
-    gap: 5vw;
+    gap: 3vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   .wholeFooterLink {
@@ -1407,7 +1413,7 @@ img {
   }
 
   .copyrightFotter {
-    gap: 3.4vw;
+    gap: 4.4vw;
     flex-direction: column;
     padding: 4vw 0vw;
     border-top: 2px solid #ffffff32;
@@ -1480,5 +1486,20 @@ img {
     top: 0.5vw;
     right: 2vw;
     font-size: 6.4vw;
+  }
+}
+
+@media (max-width: 24.5em) {
+  .sectionProduct {
+    padding: 22vw 5vw 5vw 5vw;
+  }
+
+  .wholeFooterLink {
+    font-size: 3vw;
+  }
+
+  .footerLinksList {
+    transform: unset !important;
+    gap: 3.6vw;
   }
 }

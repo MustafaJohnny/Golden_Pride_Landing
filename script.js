@@ -43,6 +43,7 @@ allLinks.forEach(function (link) {
 // Selecting the elements in oroder to make the contact pop up works!
 const btnsOpenModal = document.querySelectorAll(".btn--show-modal");
 const btnCloseModal = document.querySelector(".btn--close-modal");
+const contactBtn = document.querySelector(".contactMessageInput");
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
 
@@ -64,4 +65,5 @@ btnsOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
 
 // Calling the closeModal function on click and also when the user clicks anywhere on the overlay.
 btnCloseModal.addEventListener("click", closeModal);
+contactBtn.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
