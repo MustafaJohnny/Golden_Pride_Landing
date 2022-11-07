@@ -55,7 +55,7 @@
           <div class="heroContent">
             <h1 class="heroHeading">
               <span class="special2">Цифровая</span>
-              <span class="special">трансформация</span> компаниий
+              <span class="special">трансформация</span> компаний
             </h1>
             <p class="heroText">
               Golden Pride предоставляет услуги IT-консалтинга, разработки
@@ -140,24 +140,6 @@
             </div>
           </div>
           <div class="imgCartBox2">
-            <div class="wholeImgCart cart5">
-              <div class="cartNamingBox">
-                <p class="cartName">Анастасия Палеева</p>
-                <p class="cartRank">IOS-Разработчик</p>
-              </div>
-            </div>
-            <div class="wholeImgCart cart6">
-              <div class="cartNamingBox">
-                <p class="cartName">Мустафа Джонни</p>
-                <p class="cartRank">Frontend-Разработчик</p>
-              </div>
-            </div>
-            <div class="wholeImgCart cart7">
-              <div class="cartNamingBox">
-                <p class="cartName">Иван Даниленко</p>
-                <p class="cartRank">Инженер QA</p>
-              </div>
-            </div>
             <div class="wholeImgCart cart8">
               <div class="cartNamingBox">
                 <p class="cartName">Катерина Чурзина</p>
@@ -166,7 +148,26 @@
             </div>
             <div class="wholeImgCart cart9">
               <div class="cartNamingBox">
-                <p class="cartName">Равиль Рустамов</p>
+                <p class="cartName">Арина Кумейша</p>
+                <p class="cartRank">Frontend-Разработчик</p>
+              </div>
+            </div>
+            <div class="wholeImgCart cart6">
+              <div class="cartNamingBox">
+                <p class="cartName">Мустафа Джонни</p>
+                <p class="cartRank">Frontend-Разработчик</p>
+              </div>
+            </div>
+            <div class="wholeImgCart cart5">
+              <div class="cartNamingBox">
+                <p class="cartName">Анастасия Палеева</p>
+                <p class="cartRank">IOS-Разработчик</p>
+              </div>
+            </div>
+
+            <div class="wholeImgCart cart7">
+              <div class="cartNamingBox">
+                <p class="cartName">Иван Даниленко</p>
                 <p class="cartRank">Инженер QA</p>
               </div>
             </div>
@@ -423,22 +424,32 @@
       <form class="modal__form">
         <div class="wholeContactInput">
           <label>Имя</label>
-          <input type="text" required placeholder="Введите имя" />
+          <input
+            class="theUserName"
+            type="text"
+            required
+            placeholder="Введите имя"
+          />
         </div>
         <div class="wholeContactInput">
           <label>Ваш email</label>
-          <input required placeholder="Введите Ваш email" type="email" />
+          <input
+            class="theUserEmail"
+            required
+            placeholder="Введите Ваш email"
+            type="email"
+          />
         </div>
         <div class="wholeContactInput">
           <label>Сообщение</label>
           <input
-            class="contactMessageInput"
+            class="contactMessageInput theUserMessage"
             required
             placeholder="Ваше сообщение"
             type="text"
           />
         </div>
-        <button type="button" class="btn">Отправить</button>
+        <button type="button" class="btn sendMessageBtn">Отправить</button>
       </form>
     </div>
     <div class="overlay hidden"></div>

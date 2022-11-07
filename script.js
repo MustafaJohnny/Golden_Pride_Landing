@@ -43,7 +43,7 @@ allLinks.forEach(function (link) {
 // Selecting the elements in oroder to make the contact pop up works!
 const btnsOpenModal = document.querySelectorAll(".btn--show-modal");
 const btnCloseModal = document.querySelector(".btn--close-modal");
-const contactBtn = document.querySelector(".contactMessageInput");
+const contactBtn = document.querySelector(".sendMessageBtn");
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
 
@@ -65,5 +65,38 @@ btnsOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
 
 // Calling the closeModal function on click and also when the user clicks anywhere on the overlay.
 btnCloseModal.addEventListener("click", closeModal);
-contactBtn.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
+
+// Our Main bot address that we will send a message later..
+// const bot = new Bot(
+//   "5730249668:AAGvnXi32p-5K-9JZnsEbwwYXRxmSi2v5aY",
+//   -809597330
+// );
+
+const theUserName = document.querySelectorAll(".theUserName");
+const theUserEmail = document.querySelectorAll(".theUserEmail");
+const theUserMessage = document.querySelectorAll(".theUserMessage");
+//
+//
+//
+
+contactBtn.addEventListener("click", (event) => {
+  const userName = theUserName.value;
+  const userEmail = theUserEmail.value;
+  const userMessage = theUserMessage.value;
+
+  // if (userName.trim() === "") return;
+  // if (userEmail.trim() === "") return;
+  // if (userMessage.trim() === "") return;
+
+  console.log(userName, userEmail, userMessage);
+
+  // bot.sendMessage(`${productName} ${userNumber}`).then((res) => {
+  //   console.log(res);
+  // });
+
+  // closeModal();
+
+  // modal2.classList.remove("hidden");
+  // overlay.classList.remove("hidden");
+});

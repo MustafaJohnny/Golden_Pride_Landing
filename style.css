@@ -369,10 +369,10 @@ img {
 }
 
 .cart9 {
-  background-image: url("./Images/cart9.jpg");
+  background-image: url("./Images/cart10.jpg");
   background-size: cover;
   background-position: center;
-  background-position: -0.5vw -2.4vw;
+  background-position: 0vw 0vw;
 }
 
 .innoLine {
@@ -1229,11 +1229,11 @@ img {
 
   .cart7 {
     background-position: 0vw -23vw;
+    transform: translateX(24.5vw);
   }
 
   .cart9 {
-    background-position: -1vw -6vw;
-    transform: translateX(24.5vw);
+    background-position: 0vw 0vw;
   }
 
   .innoLine {
