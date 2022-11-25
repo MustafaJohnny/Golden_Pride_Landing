@@ -1,44 +1,22 @@
 // Main function that is responsible for scroling the whole page
 const scroll = new SmoothScroll('a[href*="#"]');
 
-// Mobile navigation work and logic
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
-// Toggling the open/close button
-btnNavEl.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
-
-// Smooth scrolling animation For Mobile
-const allLinks = document.querySelectorAll("a:link");
-
-allLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
+// Simple function we use it when the user clicks on one of navigation links, we scroll smothly to the needed section.
+document
+  .querySelector(".main-nav-list")
+  .addEventListener("click", function (e) {
     e.preventDefault();
-    const href = link.getAttribute("href");
 
-    // Scroll back to top
-    if (href === "#")
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-
-    // Scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
+    // Matching strategy so that we can scroll to the needed section.
+    if (e.target.classList.contains("main-nav-link") || "wholeFooterLink") {
+      headerEl.classList.toggle("nav-open");
+      const id = e.target.getAttribute("href");
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
     }
-
-    // Close mobile naviagtion
-    if (link.classList.contains("main-nav-link"))
-      headerEl.classList.toggle("nav-open");
-
-    if (link.classList.contains("navLinkPhoneT"))
-      headerEl.classList.toggle("nav-open");
   });
-});
 
 // Selecting the elements in oroder to make the contact pop up works!
 const btnsOpenModal = document.querySelectorAll(".btn--show-modal");
@@ -93,7 +71,4 @@ contactBtn.addEventListener("click", () => {
     });
 
   closeModal();
-
-  // modal2.classList.remove("hidden");
-  // overlay.classList.remove("hidden");
 });
