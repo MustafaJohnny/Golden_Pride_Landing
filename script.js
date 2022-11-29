@@ -18,6 +18,11 @@ document
     }
   });
 
+// Toggling the open/close button
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
 // Selecting the elements in oroder to make the contact pop up works!
 const btnsOpenModal = document.querySelectorAll(".btn--show-modal");
 const btnCloseModal = document.querySelector(".btn--close-modal");
