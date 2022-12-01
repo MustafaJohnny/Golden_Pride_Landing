@@ -1497,7 +1497,7 @@ img {
     width: 100%;
     font-weight: 700;
     font-size: 3.4vw;
-    padding: 3.2vw 0vw;
+    padding: 3.2vw 0.1vw;
   }
 
   .btn--close-modal {
